@@ -113,7 +113,7 @@ public class Solution {
         public static void main(String[] Args) throws IOException {
             String str = new BufferedReader(new InputStreamReader(System.in)).readLine();
             int count=0;
-            String[] mass = str.split("[^A-Za-z]",0);
+            String[] mass = str.split("[^A-Za-z]+",0);
             for(String str1:mass) if(!str1.equals(""))++count;
             System.out.println(count);
         }
@@ -126,7 +126,7 @@ import java.io.*;
 public class Solution {
     public static void main(String[] Args) throws IOException {
         String str = new BufferedReader(new InputStreamReader(System.in)).readLine();
-        String[] mass = str.split("[^A-Za-z]");
+        String[] mass = str.split("[^A-Za-z]+");
         int max=0;
         for (String curStr: mass)  if(curStr.length()>max) max=curStr.length();
         if(max!=0)System.out.println(max);
